@@ -1,3 +1,5 @@
+import 'package:firebasechatapp/pages/welcome/index.dart';
+import 'package:firebasechatapp/pages/sign_in/index.dart';
 import 'package:flutter/material.dart';
 import 'package:firebasechatapp/common/middlewares/middlewares.dart';
 
@@ -12,20 +14,20 @@ class AppPages {
   static List<String> history = [];
 
   static final List<GetPage> routes = [
-    /*
     GetPage(
       name: AppRoutes.INITIAL,
-      page: () => WelcomePage(),
+      page: () => const WelcomePage(),  
       binding: WelcomeBinding(),
-      middlewares: [
-        RouteWelcomeMiddleware(priority: 1),
-      ],
+      // middlewares: [
+      //   RouteWelcomeMiddleware(priority: 1),
+      // ],
     ),
     GetPage(
       name: AppRoutes.SIGN_IN,
-      page: () => SignInPage(),
+      page: () => const SignInPage(),
       binding: SignInBinding(),
     ),
+    /*
 
     // check if needed to login or not
     GetPage(
